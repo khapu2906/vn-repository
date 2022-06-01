@@ -2,11 +2,12 @@
     "name": "khapu/vn-repository",
     "authors": [
         {
-            "name": "khapu"
+            "name": "khapu",
+            "email": "daikhanh9260@gmail.com"
         }
     ],
     "license": "MIT",
-    "description": "Khapu is helping you create a repository",
+    "description": "Khapu is helping you create a repository in a easy way",
     "type": "library",
     "require": {},
     "require-dev": {},
