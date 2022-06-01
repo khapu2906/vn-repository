@@ -39,7 +39,7 @@ class PackageServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->singleton(Illuminate\Contracts\Console\Kernel::class, Kernel::class);
+        $this->app->singleton(Kernel::class);
         $this->_command();
     }
 }
