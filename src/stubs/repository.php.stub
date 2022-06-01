@@ -1,0 +1,14 @@
+<?php
+namespace DummyNamespace;
+
+use Khapu\VNRepository\Repositories\BaseRepository as Repository;
+
+class DummyClass extends Repository
+{
+	/**
+	 * @var array Illuminate\Database\Eloquent\Model;
+	 */
+	public $criterial = [
+		
+	];
+}

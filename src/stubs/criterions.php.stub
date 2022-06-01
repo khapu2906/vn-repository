@@ -1,0 +1,18 @@
+<?php
+
+namespace DummyNamespace;
+
+use Khapu\VNRepository\Criterion\Criterion;
+
+class DummyClass implements Criterion
+{
+	/**
+	 * @param Illuminate\Database\Eloquent\Model;
+	 * 
+	 * @return Illuminate\Database\Eloquent\Model;
+	 */
+	public function admit($model)
+	{
+		return $model;
+	}
+}

@@ -1,0 +1,21 @@
+{
+    "name": "khapu/vn-repository",
+    "authors": [
+        {
+            "name": "khapu"
+        }
+    ],
+    "license": "MIT",
+    "description": "Khapu is helping you create a repository",
+    "type": "library",
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Khapu\\VNRepository\\": "src/",
+            "Khapu\\VNRepository\\Repositories\\Abs\\": "src/Repositories/Abstract/",
+            "Khapu\\VNRepository\\Repositories\\Itf\\": "src/Repositories/Interface/"
+        }
+    },
+    "minimum-stability": "dev"
+}
