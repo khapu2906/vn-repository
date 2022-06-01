@@ -118,7 +118,7 @@ interface BasicRepositoryInterface
      *
      * @return Model|null
      */
-    public function syncWithModel(Model $model, string $relationship, array $ids = null);
+    static public function syncWithModel(Model $model, string $relationship, array $ids = null);
 
     /**
      * @param Model $model
@@ -127,7 +127,7 @@ interface BasicRepositoryInterface
      *
      * @return Model|null
      */
-    public function detachWithModel(Model $model, string $relationship, array $ids = null);
+    static public function detachWithModel(Model $model, string $relationship, array $ids = null);
 
     /**
      * @param Model $model
@@ -136,6 +136,6 @@ interface BasicRepositoryInterface
      *
      * @return Model|null
      */
-    public function attachWithModel(Model $model, string $relationship, array $ids = null);
+    static public function attachWithModel(Model $model, string $relationship, array $ids = null);
 
 }
