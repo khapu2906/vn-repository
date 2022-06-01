@@ -8,8 +8,8 @@ use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 class Kernel extends ConsoleKernel
 {
 	protected $command = [
-		\VNRepositoryCommand::class,
-		\CriterionCommand::class,
+	    \Khapu\VNRepository\Console\Commands\VNRepositoryCommand::class,
+        \Khapu\VNRepository\Console\Commands\CriterionCommand::class,
 	];
     /**
      * Define the application's command schedule.
