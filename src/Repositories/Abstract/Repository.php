@@ -2,21 +2,14 @@
 
 namespace Khapu\VNRepository\Repositories\Abs;
 
-use Khapu\VNRepository\Repositories\Itf\
-{
-    BasicRepositoryInterface, 
-    HardRepositoryInterface
-};
+use Khapu\VNRepository\Repositories\Itf\RepositoryInterface;
 use Illuminate\Database\Eloquent\Model;
 use Khapu\VNRepository\Repositories\Queries\{
     BasicQuery,
     HardQuery
 };
 
-abstract class Repository 
-    implements 
-        HardRepositoryInterface,
-        BasicRepositoryInterface
+abstract class Repository implements RepositoryInterface
 {
     use HardQuery, BasicQuery;
 

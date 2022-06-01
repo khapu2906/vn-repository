@@ -1,7 +1,13 @@
 <?php
 
 /**
- * @method Model rawFilter(array $where = [], array $with = [], bool $first = false);
+ *  * @method Model query(
+ * 						string $typeQuery = 'get' | 'first' | 'paginate' | 'count', 
+ * 						array $where = [], 
+ * 						array $columns = ['*'], 
+ * 						array $with = [], 
+ * 						array $orders = ['id'], 
+ * 						bool $desc = true);
  */
 
 

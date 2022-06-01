@@ -2,7 +2,6 @@
 namespace DummyNamespace;
 
 use Khapu\VNRepository\Repositories\BaseRepository as Repository;
-
 class DummyClass extends Repository
 {
 	/**
@@ -11,4 +10,12 @@ class DummyClass extends Repository
 	public $criterial = [
 		
 	];
+
+	/**
+	 * @param Illuminate\Database\Eloquent\Model;
+	 */
+	public function __construct($model)
+	{
+		parent::__construct($model);
+	}
 }
