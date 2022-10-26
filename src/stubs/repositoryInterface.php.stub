@@ -3,6 +3,7 @@ namespace DummyNamespace;
 
 use Khapu\VNRepository\Repositories\Itf\RepositoryInterface;
 
+
 interface DummyInterface extends RepositoryInterface
 {
 	
