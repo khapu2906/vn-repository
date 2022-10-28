@@ -25,6 +25,9 @@ abstract class Repository implements RepositoryInterface
 
     public $paginate = 20;
 
+    /**
+     * @var array Illuminate\Database\Eloquent\Model
+     */
     public $criterions = [];
 
     public function __construct(Model $model)

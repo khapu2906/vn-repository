@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Khapu\VNRepository\Console\Commands\VNRepositoryCommand;
 use Khapu\VNRepository\Console\Commands\CriterionCommand;
 use Khapu\VNRepository\Console\Kernel;
+use Khapu\VNRepository\Console\KernelInterface;
 class PackageServiceProvider extends ServiceProvider
 {
     protected const MODULE_PATH =  __DIR__ . '/';
@@ -29,7 +30,7 @@ class PackageServiceProvider extends ServiceProvider
      */
     public function register()
     {
-    
+        $this->_command();
     }
 
     /**
@@ -39,7 +40,5 @@ class PackageServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->singleton(Kernel::class);
-        $this->_command();
     }
 }

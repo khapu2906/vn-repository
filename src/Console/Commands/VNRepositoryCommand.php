@@ -11,7 +11,7 @@ class VNRepositoryCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $signature = 'make:repository';
+    protected $signature = 'create:repository';
 
     /**
      * The console command description.
@@ -52,7 +52,6 @@ class VNRepositoryCommand extends GeneratorCommand
     {
         parent::handle();
 
-        $this->doOtherOperations();
         return 0;
     }
 }
